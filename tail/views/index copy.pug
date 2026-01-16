@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    script(src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4")
+    link(rel="stylesheet" href="style.css")
+    style(type="text/tailwindcss")
+      | @theme {
+      |   --color-clifford: #da373d;
+      | }
+
+  body.bg-jk
+    h1.text-synth-500 Nu snackar vi synt!
+    p(class="bg-clifford") Du kan även lägga klasser som attribut 
+    
+    div.border-avocado-300.rounded-2xl
+      p.bg-avocado-100.test Med text
